@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1654386270">
+  <File Type="PA-TCL" Name="nexysA7fpga.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="nexysA7fpga_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="nexysA7fpga_reports.tcl"/>
+  <File Type="RDS-RDS" Name="nexysA7fpga.vds"/>
+  <File Type="RDS-UTIL" Name="nexysA7fpga_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="nexysA7fpga_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="nexysA7fpga.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="nexysA7fpga_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="nexysA7fpga_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/embsys/embsys.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1/Project_1.srcs/sources_1/bd/embsys/embsys.bd"/>
+        <Attr Name="ImportTime" Val="1651891989"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Demo Hardware/ClkDiv_5Hz.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Demo Hardware/ClkDiv_66_67kHz.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Demo Hardware/PmodJSTK.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Demo Hardware/PmodJSTK_Demo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Demo Hardware/clock_div.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Demo Hardware/jstk_data_decoder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Demo Hardware/pmod_step_driver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Demo Hardware/pmod_step_interface.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Demo Hardware/spiCtrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Demo Hardware/spiMode0.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardware/nexysA7fpga.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1/hardware/nexysA7fpga.sv"/>
+        <Attr Name="ImportTime" Val="1650777159"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Demo Hardware/Binary_To_BCD.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Demo Hardware/ssdCtrl.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PWDET.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1/Project_1.srcs/sources_1/new/PWDET.sv"/>
+        <Attr Name="ImportTime" Val="1650777080"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Demo Hardware/jstksteptop.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="nexysA7fpga"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/nexysA7fpga.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1/constraints/nexysA7fpga.xdc"/>
+        <Attr Name="ImportTime" Val="1650692458"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_axi_timer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_fit_timer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_nexys4io_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_axi_gpio_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_ilmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_microblaze_0_axi_intc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_PmodOLEDrgb_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_axi_gpio_green_low_0"/>
+</GenRun>

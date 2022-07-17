@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Jun  4 16:44:41 2022
+# Process ID: 42152
+# Current directory: D:/PortlandState/ECE_544/Labs/544_Final_Project/Vivado_FinalProject/Vivado_FinalProject.runs/synth_1
+# Command line: vivado.exe -log nexysA7fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nexysA7fpga.tcl
+# Log file: D:/PortlandState/ECE_544/Labs/544_Final_Project/Vivado_FinalProject/Vivado_FinalProject.runs/synth_1/nexysA7fpga.vds
+# Journal file: D:/PortlandState/ECE_544/Labs/544_Final_Project/Vivado_FinalProject/Vivado_FinalProject.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source nexysA7fpga.tcl -notrace

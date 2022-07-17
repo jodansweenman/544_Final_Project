@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr 20 20:28:38 2022
+# Process ID: 14488
+# Current directory: D:/PortlandState/ECE_544/Labs/project_1/Project_1.runs/embsys_axi_gpio_green_low_0_synth_1
+# Command line: vivado.exe -log embsys_axi_gpio_green_low_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source embsys_axi_gpio_green_low_0.tcl
+# Log file: D:/PortlandState/ECE_544/Labs/project_1/Project_1.runs/embsys_axi_gpio_green_low_0_synth_1/embsys_axi_gpio_green_low_0.vds
+# Journal file: D:/PortlandState/ECE_544/Labs/project_1/Project_1.runs/embsys_axi_gpio_green_low_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source embsys_axi_gpio_green_low_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PortlandState/ECE_544/Labs/project_1/ece544ip_v2021'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PortlandState/ECE_544/Labs/project_1/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP embsys_axi_gpio_green_low_0, cache-ID = 0b7e919682b09d14.
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 20 20:28:51 2022...

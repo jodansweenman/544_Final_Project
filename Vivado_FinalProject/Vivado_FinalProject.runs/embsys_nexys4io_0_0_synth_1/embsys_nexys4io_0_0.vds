@@ -1,0 +1,351 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 10 18:10:23 2022
+# Process ID: 18612
+# Current directory: D:/PortlandState/ECE_544/Labs/project_1/Project_1.runs/embsys_nexys4io_0_0_synth_1
+# Command line: vivado.exe -log embsys_nexys4io_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source embsys_nexys4io_0_0.tcl
+# Log file: D:/PortlandState/ECE_544/Labs/project_1/Project_1.runs/embsys_nexys4io_0_0_synth_1/embsys_nexys4io_0_0.vds
+# Journal file: D:/PortlandState/ECE_544/Labs/project_1/Project_1.runs/embsys_nexys4io_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source embsys_nexys4io_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1125.961 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PortlandState/ECE_544/Labs/project_1/ece544ip_v2021'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PortlandState/ECE_544/Labs/project_1/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1125.961 ; gain = 0.000
+Command: synth_design -top embsys_nexys4io_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19516
+WARNING: [Synth 8-6901] identifier 'btnsw_in' is used before its declaration [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/hdl/nexys4io_v3_0_S00_AXI.v:512]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:43 . Memory (MB): peak = 1171.840 ; gain = 45.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'embsys_nexys4io_0_0' [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ip/embsys_nexys4io_0_0/synth/embsys_nexys4io_0_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'nexys4io_v3_0' [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/hdl/nexys4io_v3_0.v:4]
+	Parameter SIMULATE bound to: 0 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'nexys4io_v3_0_S00_AXI' [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/hdl/nexys4io_v3_0_S00_AXI.v:4]
+	Parameter SIMULATE bound to: 0 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/hdl/nexys4io_v3_0_S00_AXI.v:273]
+INFO: [Synth 8-226] default block is never used [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/hdl/nexys4io_v3_0_S00_AXI.v:510]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:24]
+	Parameter CLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter DEBOUNCE_FREQUENCY_HZ bound to: 250 - type: integer 
+	Parameter RESET_POLARITY_LOW bound to: 1 - type: integer 
+	Parameter CNTR_WIDTH bound to: 32 - type: integer 
+	Parameter SIMULATE bound to: 0 - type: integer 
+	Parameter SIMULATE_FREQUENCY_CNT bound to: 5 - type: integer 
+	Parameter pb0_in bound to: 4'b0001 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:102]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:103]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:104]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:105]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:106]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:107]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:110]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:111]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:112]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:113]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:115]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:116]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:117]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:118]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:119]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:120]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:121]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:122]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:123]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:124]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (1#1) [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v:24]
+INFO: [Synth 8-6157] synthesizing module 'sevensegment' [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/sevensegment.v:35]
+	Parameter CLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter REFRESH_FREQUENCY_HZ bound to: 500 - type: integer 
+	Parameter RESET_POLARITY_LOW bound to: 1 - type: integer 
+	Parameter CNTR_WIDTH bound to: 32 - type: integer 
+	Parameter SIMULATE bound to: 0 - type: integer 
+	Parameter SIMULATE_FREQUENCY_CNT bound to: 5 - type: integer 
+	Parameter digit1 bound to: 8'b11111110 
+	Parameter digit2 bound to: 8'b11111101 
+	Parameter digit3 bound to: 8'b11111011 
+	Parameter digit4 bound to: 8'b11110111 
+	Parameter digit5 bound to: 8'b11101111 
+	Parameter digit6 bound to: 8'b11011111 
+	Parameter digit7 bound to: 8'b10111111 
+	Parameter digit8 bound to: 8'b01111111 
+INFO: [Synth 8-6157] synthesizing module 'Digit' [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/sevensegment.v:194]
+	Parameter zero bound to: 7'b1000000 
+	Parameter one bound to: 7'b1111001 
+	Parameter two bound to: 7'b0100100 
+	Parameter three bound to: 7'b0110000 
+	Parameter four bound to: 7'b0011001 
+	Parameter five bound to: 7'b0010010 
+	Parameter six bound to: 7'b0000010 
+	Parameter seven bound to: 7'b1111000 
+	Parameter eight bound to: 7'b0000000 
+	Parameter nine bound to: 7'b0010000 
+	Parameter A bound to: 7'b0001000 
+	Parameter B bound to: 7'b0000011 
+	Parameter C bound to: 7'b1000110 
+	Parameter D bound to: 7'b0100001 
+	Parameter E bound to: 7'b0000110 
+	Parameter F bound to: 7'b0001110 
+	Parameter seg_a bound to: 7'b1111110 
+	Parameter seg_b bound to: 7'b1111101 
+	Parameter seg_c bound to: 7'b1111011 
+	Parameter seg_d bound to: 7'b1110111 
+	Parameter seg_e bound to: 7'b1101111 
+	Parameter seg_f bound to: 7'b1011111 
+	Parameter seg_g bound to: 7'b0111111 
+	Parameter upH bound to: 7'b0001001 
+	Parameter upL bound to: 7'b1000111 
+	Parameter upR bound to: 7'b0001000 
+	Parameter lol bound to: 7'b1001111 
+	Parameter lor bound to: 7'b0101111 
+	Parameter loy bound to: 7'b0010001 
+	Parameter blank bound to: 7'b1111111 
+INFO: [Synth 8-6155] done synthesizing module 'Digit' (2#1) [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/sevensegment.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'sevensegment' (3#1) [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/sevensegment.v:35]
+INFO: [Synth 8-6157] synthesizing module 'rgbpwm' [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/rgbpwm.v:62]
+	Parameter RESET_POLARITY_LOW bound to: 1 - type: integer 
+	Parameter PWM_DC_WIDTH bound to: 8 - type: integer 
+	Parameter PWM_CH_COUNT bound to: 3 - type: integer 
+	Parameter PWM_CNTR_WIDTH bound to: 9 - type: integer 
+	Parameter RED_INDEX bound to: 2 - type: integer 
+	Parameter GREEN_INDEX bound to: 1 - type: integer 
+	Parameter BLUE_INDEX bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rgbpwm' (4#1) [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/src/rgbpwm.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'nexys4io_v3_0_S00_AXI' (5#1) [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/hdl/nexys4io_v3_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'nexys4io_v3_0' (6#1) [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ipshared/f811/hdl/nexys4io_v3_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_nexys4io_0_0' (7#1) [d:/PortlandState/ECE_544/Labs/project_1/Project_1.gen/sources_1/bd/embsys/ip/embsys_nexys4io_0_0/synth/embsys_nexys4io_0_0.v:56]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:55 . Memory (MB): peak = 1243.762 ; gain = 117.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:01:00 . Memory (MB): peak = 1243.762 ; gain = 117.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:27 ; elapsed = 00:01:00 . Memory (MB): peak = 1243.762 ; gain = 117.801
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.332 . Memory (MB): peak = 1243.762 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1329.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.439 . Memory (MB): peak = 1329.836 ; gain = 0.004
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:53 ; elapsed = 00:01:50 . Memory (MB): peak = 1329.836 ; gain = 203.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:53 ; elapsed = 00:01:50 . Memory (MB): peak = 1329.836 ; gain = 203.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:01:50 . Memory (MB): peak = 1329.836 ; gain = 203.875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'an_reg' in module 'sevensegment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  digit1 |                              000 |                         11111110
+                  digit2 |                              001 |                         11111101
+                  digit3 |                              010 |                         11111011
+                  digit4 |                              011 |                         11110111
+                  digit5 |                              100 |                         11101111
+                  digit6 |                              101 |                         11011111
+                  digit7 |                              110 |                         10111111
+                  digit8 |                              111 |                         01111111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'an_reg' using encoding 'sequential' in module 'sevensegment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:57 ; elapsed = 00:01:57 . Memory (MB): peak = 1329.836 ; gain = 203.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 18    
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 9     
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 22    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 17    
+	  16 Input   32 Bit        Muxes := 15    
+	   8 Input    8 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 22    
+	   2 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:02:51 . Memory (MB): peak = 1329.836 ; gain = 203.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:54 ; elapsed = 00:03:32 . Memory (MB): peak = 1329.836 ; gain = 203.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:55 ; elapsed = 00:03:33 . Memory (MB): peak = 1329.836 ; gain = 203.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:56 ; elapsed = 00:03:35 . Memory (MB): peak = 1342.645 ; gain = 216.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:13 ; elapsed = 00:03:55 . Memory (MB): peak = 1353.801 ; gain = 227.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:13 ; elapsed = 00:03:55 . Memory (MB): peak = 1353.801 ; gain = 227.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:13 ; elapsed = 00:03:56 . Memory (MB): peak = 1353.801 ; gain = 227.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:13 ; elapsed = 00:03:56 . Memory (MB): peak = 1353.801 ; gain = 227.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:14 ; elapsed = 00:03:56 . Memory (MB): peak = 1353.801 ; gain = 227.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:14 ; elapsed = 00:03:56 . Memory (MB): peak = 1353.801 ; gain = 227.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    28|
+|2     |LUT1   |    19|
+|3     |LUT2   |    11|
+|4     |LUT3   |    13|
+|5     |LUT4   |    68|
+|6     |LUT5   |   130|
+|7     |LUT6   |   201|
+|8     |MUXF7  |    72|
+|9     |MUXF8  |    32|
+|10    |FDRE   |   787|
+|11    |FDSE   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:14 ; elapsed = 00:03:56 . Memory (MB): peak = 1353.801 ; gain = 227.840
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:38 ; elapsed = 00:03:38 . Memory (MB): peak = 1353.801 ; gain = 141.766
+Synthesis Optimization Complete : Time (s): cpu = 00:02:14 ; elapsed = 00:03:56 . Memory (MB): peak = 1353.801 ; gain = 227.840
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 1365.871 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 132 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1365.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+58 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:42 ; elapsed = 00:05:07 . Memory (MB): peak = 1365.871 ; gain = 239.910
+INFO: [Common 17-1381] The checkpoint 'D:/PortlandState/ECE_544/Labs/project_1/Project_1.runs/embsys_nexys4io_0_0_synth_1/embsys_nexys4io_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP embsys_nexys4io_0_0, cache-ID = 2b8817419e6e36ec
+INFO: [Coretcl 2-1174] Renamed 14 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/PortlandState/ECE_544/Labs/project_1/Project_1.runs/embsys_nexys4io_0_0_synth_1/embsys_nexys4io_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file embsys_nexys4io_0_0_utilization_synth.rpt -pb embsys_nexys4io_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 10 18:16:32 2022...

@@ -1,0 +1,50 @@
+
+
+/***************************** Include Files *******************************/
+#include "myPMODStep.h"
+
+/************************** Function Definitions ***************************/
+
+/* Initialize device
+ *
+ * Args:
+ * 	InstancePtr - the pointer of PmodSTEP object
+ * 	BASEADDR - the base address of the I/O reg (BRAM) of PmodSTEP
+ *
+ */ 
+void mySTEP_init(PmodSTEP *InstancePtr, u32 BASEADDR) {
+	InstancePtr->enable = (unsigned int*)BASEADDR;
+	InstancePtr->direction = (unsigned int*)(BASEADDR+0x04);
+
+	*(InstancePtr->enable) = 0x0;
+	*(InstancePtr->direction) = 0x00;
+}
+
+/* Start motor
+ *
+ * Args:
+ * 	InstancePtr - the pointer of PmodSTEP object
+ *	Dir - the rotation direction (0:clockwise, 1:counter-clockwise)
+ *
+ */
+void mySTEP_start(PmodSTEP *InstancePtr, unsigned int Dir){
+	*(InstancePtr->enable) = 0x1;
+	if(Dir == 1){
+		*(InstancePtr->direction) = 0x01;
+	}
+	else {
+		*(InstancePtr->direction) = 0x10;
+	}
+	
+}
+
+/* Stop motor
+ *
+ * Args:
+ * 	InstancePtr - the pointer of PmodSTEP object
+ *
+ */
+void mySTEP_stop(PmodSTEP *InstancePtr){
+	*(InstancePtr->enable) = 0x0;
+	*(InstancePtr->direction) = 0x00;
+}

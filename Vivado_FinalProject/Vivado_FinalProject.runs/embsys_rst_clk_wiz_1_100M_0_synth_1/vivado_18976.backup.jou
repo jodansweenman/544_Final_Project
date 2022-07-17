@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 10 18:09:59 2022
+# Process ID: 18976
+# Current directory: D:/PortlandState/ECE_544/Labs/project_1/Project_1.runs/embsys_rst_clk_wiz_1_100M_0_synth_1
+# Command line: vivado.exe -log embsys_rst_clk_wiz_1_100M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source embsys_rst_clk_wiz_1_100M_0.tcl
+# Log file: D:/PortlandState/ECE_544/Labs/project_1/Project_1.runs/embsys_rst_clk_wiz_1_100M_0_synth_1/embsys_rst_clk_wiz_1_100M_0.vds
+# Journal file: D:/PortlandState/ECE_544/Labs/project_1/Project_1.runs/embsys_rst_clk_wiz_1_100M_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source embsys_rst_clk_wiz_1_100M_0.tcl -notrace

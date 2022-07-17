@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file D:\PortlandState\ECE_544\Labs\project_1\Project_1.runs\embsys_lmb_bram_0_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

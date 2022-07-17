@@ -1,0 +1,45 @@
+Nothing to build in platform 'FinalProject_Platform'
+
+18:47:48 **** Incremental Build of configuration Debug for project FinalProject_Application ****
+make all 
+'Building file: ../src/CNC_Machine.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/CNC_Machine.o" -ID:/PortlandState/ECE_544/Labs/544_Final_Project/FinalProject_Platform/export/FinalProject_Platform/sw/FinalProject_Platform/freertos10_xilinx_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/CNC_Machine.d" -MT"src/CNC_Machine.o" -o "src/CNC_Machine.o" "../src/CNC_Machine.c"
+../src/CNC_Machine.c: In function 'display_thread':
+../src/CNC_Machine.c:334:29: warning: unused variable 'uSTEPInstructionsReceived' [-Wunused-variable]
+  334 |  struct   STEP_Instructions uSTEPInstructionsReceived;
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/CNC_Machine.c: In function 'main':
+../src/CNC_Machine.c:464:2: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+  464 |  exit(0);
+      |  ^~~~
+../src/CNC_Machine.c:464:2: warning: incompatible implicit declaration of built-in function 'exit'
+../src/CNC_Machine.c:36:1: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   35 | #include "platform.h"
+  +++ |+#include <stdlib.h>
+   36 | 
+In file included from D:/PortlandState/ECE_544/Labs/544_Final_Project/FinalProject_Platform/export/FinalProject_Platform/sw/FinalProject_Platform/freertos10_xilinx_domain/bspinclude/include/xtmrctr.h:160,
+                 from ../src/CNC_Machine.c:27:
+../src/CNC_Machine.c: In function 'prvSetupHardware':
+D:/PortlandState/ECE_544/Labs/544_Final_Project/FinalProject_Platform/export/FinalProject_Platform/sw/FinalProject_Platform/freertos10_xilinx_domain/bspinclude/include/xstatus.h:39:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   39 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/CNC_Machine.c:498:10: note: in expansion of macro 'XST_FAILURE'
+  498 |   return XST_FAILURE;
+      |          ^~~~~~~~~~~
+../src/CNC_Machine.c:468:13: note: declared here
+  468 | static void prvSetupHardware( void )
+      |             ^~~~~~~~~~~~~~~~
+'Finished building: ../src/CNC_Machine.c'
+' '
+'Building target: FinalProject_Application.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PortlandState/ECE_544/Labs/544_Final_Project/FinalProject_Platform/export/FinalProject_Platform/sw/FinalProject_Platform/freertos10_xilinx_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "FinalProject_Application.elf"  ./src/CNC_Machine.o ./src/platform.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+'Finished building target: FinalProject_Application.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size FinalProject_Application.elf  |tee "FinalProject_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44364	    600	  70220	 115184	  1c1f0	FinalProject_Application.elf
+'Finished building: FinalProject_Application.elf.size'
+' '

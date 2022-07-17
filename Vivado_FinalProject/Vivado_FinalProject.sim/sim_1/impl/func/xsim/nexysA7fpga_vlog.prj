@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../Project_1.gen/sources_1/bd/embsys/ipshared/ec67/hdl" --include "../../../../../Project_1.gen/sources_1/bd/embsys/ipshared/d0f7" \
+"nexysA7fpga_func_impl.v" \
+
+# Do not sort compile order
+nosort

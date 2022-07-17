@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/PortlandState/ECE_544/Labs/project_1/Project_1.ip_user_files/bd/embsys/ip/embsys_axi_gpio_1_0/sim/embsys_axi_gpio_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'embsys_axi_gpio_1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/PortlandState/ECE_544/Labs/project_1/Project_1.ip_user_files/bd/embsys/ip/embsys_axi_gpio_green_low_0/sim/embsys_axi_gpio_green_low_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'embsys_axi_gpio_green_low_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/PortlandState/ECE_544/Labs/project_1/Project_1.ip_user_files/bd/embsys/ip/embsys_axi_gpio_green_high_0/sim/embsys_axi_gpio_green_high_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'embsys_axi_gpio_green_high_0'
